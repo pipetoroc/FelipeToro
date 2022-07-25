@@ -20,17 +20,17 @@
     --box-shadow-1: 0 3px 15px rgba(0,0,0,.2) 
 }
 body{
- background-color: #00000000;
  font-family: 'Montserrat Alternates', sans-serif;
  font-size: 1.1rem;
+ background-color: #00000000;
  color: var(--color-white);
  transition: all .4s ease-in-out;
 }
 a{
     display: inline-block;
     text-decoration: none;
-    color: inherit;
     font-family: inherit;
+    color: inherit;
 }
 header{
     height: 100vh;
@@ -38,17 +38,17 @@ header{
     overflow: hidden;
 }
 section{
-    min-height: 100vh;
-    width: 100%;
     position: absolute;
     left: 0;
     top: 0;
+    width: 100%;
+    min-height: 100vh;
     padding: 3rem 8rem;
 }
 .section{
+    background-color: var(--color-primary);
     transform: translateY(-100%) scale(0);
     transition: all .4s ease-in-out;
-    background-color: var(--color-primary);
 }
 .sec1{
     display: none;
@@ -89,8 +89,8 @@ section{
     align-items: center;
     justify-content: center;
     position: fixed;
-    z-index: 10;
     top: 50%;
+    z-index: 10;
     right: 3%;
     transform: translateY(-50%);
 }
@@ -103,9 +103,9 @@ section{
     margin:.7rem 0;
     padding:1rem;
     border-radius:50%;
-    cursor: pointer;
-    box-shadow: var(--box-shadow-1);
     background-color:var(--color-grey4);
+    box-shadow: var(--box-shadow-1);
+    cursor: pointer;
 }
 .control--active-btn{
     background-color: var(--color-secondary);
@@ -124,38 +124,38 @@ i{
     height: 100%;
 }
 .left-header{
+    position: relative;
     display: flex;
     align-items: center;
-    position: relative;
 }
 .h-shape{
-    transition: all .4s ease-in-out;
-    width: 65%;
-    height: 100%;
-    background-color: var(--color-secondary);
     position: absolute;
     left: 0;
     top: 0;
+    width: 65%;
+    height: 100%;
+    transition: all .4s ease-in-out;
+    background-color: var(--color-secondary);
     z-index: -1;
     clip-path: polygon(0 0, 46% 0, 79% 100%, 0 100%);
 }
 .image{
-    border-radius: 14px;
     height: 90%;
     width: 68%;
     margin-left: 4rem;
+    border-radius: 14px;
     background-color: var(--color-black);
     transition: all .4s ease-in-out;
 }
-img{
+.image .img__profile{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: all .4s ease-in-out;
     filter: grayscale(100%);
     border-radius: 14px;
+    transition: all .4s ease-in-out;
 }
-img:hover{
+.image .img__profile:hover{
     filter: grayscale(0);
 }
 .right-header{
@@ -171,14 +171,12 @@ img:hover{
     font-size: 3rem;
 } 
 p{
-    margin: 1.5px 0px;
+    margin: 30px 0px;
     line-height: 2rem;
+    text-align: justify;
 }
-/*Independent Components*/
-/*.btn-container{*/
-    /*display: flex;*/
-    /*align-self: center;*/
-/*}*/
+
+/*ABOUT ME*/
 .about-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -203,9 +201,9 @@ p{
     box-shadow: 1px 4px 15px rgba(0, 0, 0, .32);
 }
 .abt-text{
-    padding: 1.5rem;
     display: flex;
     flex-direction: column;
+    padding: 1.5rem;
 }
 .abt-text .large-text{
     font-size: 3rem;
@@ -214,28 +212,28 @@ p{
 }
 
 .abt-text .small-text{
-    padding-left: 3rem;
     position: relative;
+    padding-left: 3rem;
     text-transform: uppercase;
     font-size: 1.2rem;
-    color: var(--color-grey1);
     letter-spacing: 2px;
+    color: var(--color-grey1);
 }
 .abt-text .small-text::before{
-   content: ''; 
    position: absolute;
    left: 0;
    top: 15px;
    width: 2rem;
    height: 2px;
+   content: ''; 
    background-color: var(--color-grey5);
 }
 .left-about{
     padding-right: 5rem;
 }
 .left-about p{
-    line-height: 2rem;
     padding: 1rem;
+    line-height: 2rem;
     color: var(--color-grey1);
 }
 .left-about h4{
@@ -266,34 +264,34 @@ p{
     color: var(--color-grey2);
 }
 .progress{
+    position: relative;
     width: 100%;
     height: .45rem;
-    background-color: var(--color-grey4);
     margin-left: 1rem;
-    position: relative;
+    background-color: var(--color-grey4);
 }
 .progress span{
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
-    transition: all .4s ease-in-out;
     width: 90%;
     background-color: var(--color-secondary);
+    transition: all .4s ease-in-out;
 }
 .stats-title{
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    text-align: center;
-    padding: 3.5rem 0;
     position: relative;
+    padding: 3.5rem 0;
+    text-align: center;
+    font-size: 1.4rem;
+    text-transform: uppercase;
 }
 .stat-title::before{
-    content: "";
     left: 50%;
     top: 0;
     width: 40%;
     height: 1px;
+    content: "";
     background-color: var(--color-grey5);
     transform: translateX(-50%);
 }
@@ -302,21 +300,21 @@ p{
     align-self: flex-start;
 }
 .main-btn{
-    display: flex;
     position: relative;
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
     border-radius: 30px;
     color: inherit;
     font-weight: 600;
     border: 1px solid var(--color-secondary);
-    align-self: flex-start;
-    align-items: center;
     overflow: hidden;
 }
 .main-btn::before{
-    content:'';
     position: absolute;
     top: 0;
     right: 0;
+    content:'';
     transform: translateX(100%);
     transition: all .4s ease-out;
     z-index: -1;
@@ -331,21 +329,21 @@ p{
     padding: 0 2rem;
 }
 .btn-icon{
-    background-color: var(--color-secondary);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
     padding: 1rem;
+    background-color: var(--color-secondary);
+    border-radius: 50%;
 }
 .main-title{
     text-align: center;
 }
 .main-title h2{
     position: relative;
-    text-transform: uppercase;
     font-size: 4rem;
     font-weight: 700;
+    text-transform: uppercase;
 }
 .main-title span{
     color: var(--color-secondary);
@@ -354,15 +352,16 @@ p{
     position: absolute;
     top: 50%;
     left: 50%;
+    width: max-content;
+    font-weight: 700;
+    font-size: 6.3rem;
+    text-transform: uppercase;
     color: var(--color-grey5);
     transition: all .4s ease-in-out;
     z-index: -1;
     transform: translate(-50%, -50%);
-    font-weight: 700;
-    font-size: 6.3rem;
-    width: max-content;
-    text-transform: uppercase;
 }
+/*Portfolio*/
 .port-text{
     padding: 2rem 0;
     text-align: center;
@@ -373,27 +372,30 @@ p{
     grid-gap: 2rem;
     margin-top: 3rem;
 }
-.portfolio-item{
+.portfolios .portfolio-item{
     position: relative;
 }
-.portfolio-item img{
+.portfolios .portfolio-item img{
     width:100%;
     height: 300px;
     object-fit: contain;
     border-radius: 15px;
 }
-.hover-item{
-   width: 100%; 
-   height: 100%;
-   background-color: var(--color-secondary);
-   position: absolute;
-   left: 0;
-   top: 0;
-   border-radius: 15px;
+.portfolios .portfolio-item .hover-item{
    display: flex;
    justify-content: center;
    align-items: center;
    flex-direction: column;
+   width: 100%; 
+   height: 100%;
+   position: absolute;
+   left: 0;
+   top: 0;
+   background-color: var(--color-secondary);
+   border-radius: 15px;
+   opacity: 0;
+   transform: scale(0);
+   transition: all .4s ease-in-out;
 }
 .hover-item h3{
     font-size: 1.5rem;
@@ -423,7 +425,62 @@ p{
     color: var(--color-white);
     margin: 0 1rem;
 }
-
+/*Contact Section*/
+.contact-container-con{
+    display: flex;
+    padding-top: 3.5rem;
+}
+.contact-container-con .left-contact{
+    flex: 2;
+}
+.contact-item span{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.right-contact{
+    flex: 3;
+    margin-left: 3rem;
+}
+.input-control{
+    margin: 1.5rem 0;
+}
+.i-c-2{
+    display: flex;
+  }
+.i-c-2:last-child{
+  margin-left: 1.5rem;
+}
+input{
+    border-radius: 30px;
+    font-weight: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 0.8rem 1.1rem;
+    outline: none;
+    border: none;
+    background-color: var(--color-grey5);
+    width: 100%;
+    color: var(--color-white);
+    resize: none;
+}
+textarea{
+    border-radius: 30px;
+    font-weight: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 0.8rem 1.1rem;
+    outline: none;
+    border: none;
+    background-color: var(--color-grey5);
+    width: 100%;
+    color: var(--color-white);
+    resize: none;
+}
+.contact-form .main-btn{
+    width: 50%;
+    justify-content: space-between;
+    padding-left: 10px;
+}
 
 
 
