@@ -433,6 +433,20 @@ p{
 .contact-container-con .left-contact{
     flex: 2;
 }
+.contact-icons{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.contact-icon a{
+   margin-top: 20px; 
+   width: 80px;
+   height: 80px;
+}
+.contact-icon .fa-brands{
+    margin-top: 20px;
+    font-size: 3rem;
+}
 .contact-item span{
     display: inline-block;
     margin-bottom: 20px;
