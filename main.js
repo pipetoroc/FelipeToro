@@ -28,10 +28,8 @@ allSections.addEventListener("click", (e)=>{
         sections.forEach((section)=>{
             section.classList.remove('active')
         })
-
         const element = document.getElementById(id);
         element.classList.add('active');
-      
     }})
     //toogle theme
     const themeBtn = document.querySelector('.theme-btn');
