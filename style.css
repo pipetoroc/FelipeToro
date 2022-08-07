@@ -581,7 +581,7 @@ textarea{
     resize: none;
 }
 .contact-form .main-btn{
-    width: 50%;
+    width: 250px;
     justify-content: space-between;
     padding-left: 10px;
 }
