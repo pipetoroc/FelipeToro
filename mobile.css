@@ -542,3 +542,63 @@ p{
     color: var(--color-white);
     margin: 0 1rem;
 }
+/* Contact Section */
+.input-control{
+    margin: 1.5rem 0;
+}
+.input-control .i-c-2{
+    margin-bottom: 14px;
+    justify-items: space-between;
+}
+.input-control input{
+    margin-bottom: 14px;
+}
+
+.i-c-2:last-child{
+  margin-left: 1.5rem;
+  margin-top: 14px;
+}
+input{
+    border-radius: 30px;
+    font-weight: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 0.8rem 1.1rem;
+    outline: none;
+    border: none;
+    background-color: var(--color-grey4);
+    width: 100%;
+    color: var(--color-white);
+    resize: none;
+}
+textarea{
+    border-radius: 30px;
+    font-weight: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 0.8rem 1.1rem;
+    outline: none;
+    border: none;
+    background-color: var(--color-grey4);
+    width: 100%;
+    color: var(--color-white);
+    resize: none;
+}
+.contact-form{
+    margin-top: 60px;
+}
+.contact-form .main-btn{
+    width: 50%;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+.submit-btn{
+    display: flex;
+    justify-content: center;
+}
+.contact-form .submit-btn .main-btn{
+    min-width: 200px;
+}
+.contact-container-con{
+    margin: 30px 30px 80px 30px;
+}

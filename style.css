@@ -474,6 +474,9 @@ p{
     margin: 0 1rem;
 }
 /*Contact Section*/
+.contact-container{
+    margin-right: 55px;
+}
 .contact-container-con{
     display: flex;
     padding-top: 3.5rem;
@@ -495,6 +498,7 @@ p{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
+    flex-wrap: wrap;
 }
 .contact-container-con .left-contact .contact-info .contact-item p{
     margin: .3rem 0;
@@ -580,4 +584,14 @@ textarea{
     width: 50%;
     justify-content: space-between;
     padding-left: 10px;
+}
+.submit-btn{
+    display: flex;
+    justify-content: center;
+}
+.contact-form .submit-btn .main-btn{
+    min-width: 200px;
+}
+.input-control input{
+    margin-bottom: opx;
 }
