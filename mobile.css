@@ -103,7 +103,7 @@ section{
     align-items: center;
     justify-content: center;
     position: fixed;
-    top: 95vh;
+    top: 100vh;
     right: 3%;
     z-index: 10;
     background-color: var(--color-primary);
