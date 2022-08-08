@@ -92,7 +92,7 @@ section{
 .controls{
     display: flex;
     position: fixed;
-    top: 0;
+    top: 0px;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
