@@ -1,2 +1,2 @@
 # FelipeToro
-Portfolio web developer frontend
+portfolio mobile first
