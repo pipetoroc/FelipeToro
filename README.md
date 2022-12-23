@@ -1,7 +1,6 @@
-# Portfolio Web Developer - Frontend
+# Portfolio Web Developer
 
-This is my portfolio as a web developer, This project has been developed to practice and show a little that I have learned self-taught and wanting to look for a job opportunity in the area.
-I am continuously studying so I will improving this portfolio.
+Portfolio web following the tutorial from FreeCodeAcademy with some modifications, i added a responsive behavior and coded the style using CSS vanilla. This project has been developed to practice.
 
 ## Tecnologies
 
